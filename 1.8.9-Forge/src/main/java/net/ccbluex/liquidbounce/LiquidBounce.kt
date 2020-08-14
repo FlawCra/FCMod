@@ -37,12 +37,12 @@ import net.minecraft.util.ResourceLocation
 object LiquidBounce {
 
     // Client information
-    const val CLIENT_NAME = "LiquidBounce"
-    const val CLIENT_VERSION = 73
+    const val CLIENT_NAME = "FCMod"
+    const val CLIENT_VERSION = 1
     const val IN_DEV = true
-    const val CLIENT_CREATOR = "CCBlueX"
+    const val CLIENT_CREATOR = "FlawCra"
     const val MINECRAFT_VERSION = "1.8.9"
-    const val CLIENT_CLOUD = "https://cloud.liquidbounce.net/LiquidBounce"
+    const val CLIENT_CLOUD = "https://api.flawcra.cc/fcmod"
 
     var isStarting = false
 
@@ -158,7 +158,8 @@ object LiquidBounce {
             // Check json is valid object and has current minecraft version
             if (jsonObj is JsonObject && jsonObj.has(MINECRAFT_VERSION)) {
                 // Get official latest client version
-                latestVersion = jsonObj[MINECRAFT_VERSION].asInt
+                if(jsonObj[MINECRAFT_VERSION].asInt > CLIENT_VERSION)
+                    latestVersion = jsonObj[MINECRAFT_VERSION].asInt
             }
         } catch (exception: Throwable) { // Print throwable to console
             ClientUtils.getLogger().error("Failed to check for updates.", exception)

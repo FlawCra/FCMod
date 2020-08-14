@@ -25,7 +25,7 @@ class ClientRichPresence : MinecraftInstance() {
     // IPC Client
     private var ipcClient: IPCClient? = null
 
-    private var appID = 0L
+    private var appID = 743631378075353160
     private val assets = mutableMapOf<String, String>()
     private val timestamp = OffsetDateTime.now()
 

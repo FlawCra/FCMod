@@ -8,6 +8,7 @@ package net.ccbluex.liquidbounce.ui.client
 import com.google.gson.Gson
 import com.google.gson.JsonParser
 import com.google.gson.annotations.SerializedName
+import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.injection.implementations.IMixinGuiSlot
 import net.ccbluex.liquidbounce.ui.font.Fonts
 import net.ccbluex.liquidbounce.utils.ClientUtils
@@ -162,8 +163,8 @@ class GuiContributors(private val prevGui: GuiScreen) : GuiScreen() {
             val gson = Gson()
             val jsonParser = JsonParser()
 
-            val gitHubContributors = gson.fromJson(HttpUtils.get("https://api.github.com/repos/CCBlueX/LiquidBounce/stats/contributors"), Array<GitHubContributor>::class.java)
-            val additionalInformation = jsonParser.parse(HttpUtils.get("https://raw.githubusercontent.com/CCBlueX/LiquidCloud/master/LiquidBounce/contributors.json")).asJsonObject
+            val gitHubContributors = gson.fromJson(HttpUtils.get("https://api.github.com/repos/FlawCra/FCMod/stats/contributors"), Array<GitHubContributor>::class.java)
+            val additionalInformation = jsonParser.parse(HttpUtils.get(LiquidBounce.CLIENT_CLOUD+"/contributors.json")).asJsonObject
 
             val credits = ArrayList<Credit>(gitHubContributors.size)
 

@@ -19,7 +19,6 @@ import net.ccbluex.liquidbounce.script.api.global.Setting
 import net.ccbluex.liquidbounce.utils.ClientUtils
 import net.ccbluex.liquidbounce.utils.MinecraftInstance
 import java.io.File
-import java.util.*
 import java.util.function.Function
 import javax.script.ScriptEngine
 import kotlin.collections.HashMap
@@ -144,7 +143,7 @@ class Script(val scriptFile: File) : MinecraftInstance() {
     private fun supportLegacyScripts() {
         if (getMagicComment("api_version") != "2") {
             ClientUtils.getLogger().info("[ScriptAPI] Running script '${scriptFile.name}' with legacy support.")
-            val legacyScript = LiquidBounce::class.java.getResource("/assets/minecraft/liquidbounce/scriptapi/legacy.js").readText()
+            val legacyScript = LiquidBounce::class.java.getResource("/assets/minecraft/fcmod/scriptapi/legacy.js").readText()
             scriptEngine.eval(legacyScript)
         }
     }
