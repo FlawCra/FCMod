@@ -26,7 +26,7 @@ class GuiWelcome : GuiScreen() {
         val font = Fonts.font35
 
         font.drawCenteredString("Thank you for downloading and installing our client!", width / 2F, height / 8F + 70, 0xffffff, true)
-        font.drawCenteredString("Here is some information you might find useful if you are using LiquidBounce for the first time.", width / 2F, height / 8F + 70 + font.FONT_HEIGHT, 0xffffff, true)
+        font.drawCenteredString("Here is some information you might find useful if you are using FCMod for the first time.", width / 2F, height / 8F + 70 + font.FONT_HEIGHT, 0xffffff, true)
 
         font.drawCenteredString("§lClickGUI:", width / 2F, height / 8F + 80 + font.FONT_HEIGHT * 3, 0xffffff, true)
         font.drawCenteredString("Press ${Keyboard.getKeyName(LiquidBounce.moduleManager[ClickGUI::class.java]!!.keyBind)} to open up the ClickGUI", width / 2F, height / 8 + 80F + font.FONT_HEIGHT * 4, 0xffffff, true)
@@ -38,9 +38,8 @@ class GuiWelcome : GuiScreen() {
         font.drawCenteredString(".autosettings load <name> / .autosettings list", width / 2F, height / 8F + 80 + font.FONT_HEIGHT * 10, 0xffffff, true)
 
         font.drawCenteredString("§lNeed help? Feel free to contact us!", width / 2F, height / 8F + 80 + font.FONT_HEIGHT * 12, 0xffffff, true)
-        font.drawCenteredString("YouTube: https://youtube.com/ccbluex", width / 2F, height / 8F + 80 + font.FONT_HEIGHT * 13, 0xffffff, true)
-        font.drawCenteredString("Twitter: https://twitter.com/ccbluex", width / 2F, height / 8F + 80 + font.FONT_HEIGHT * 14, 0xffffff, true)
-        font.drawCenteredString("Forum: https://forum.ccbluex.net/", width / 2F, height / 8F + 80 + font.FONT_HEIGHT * 15, 0xffffff, true)
+        font.drawCenteredString("YouTube: https://youtube.com/FlawCra", width / 2F, height / 8F + 80 + font.FONT_HEIGHT * 13, 0xffffff, true)
+        font.drawCenteredString("Twitter: https://twitter.com/FlawCra", width / 2F, height / 8F + 80 + font.FONT_HEIGHT * 14, 0xffffff, true)
 
         super.drawScreen(mouseX, mouseY, partialTicks)
 
