@@ -42,7 +42,7 @@ object LiquidBounce {
     const val IN_DEV = true
     const val CLIENT_CREATOR = "FlawCra"
     const val MINECRAFT_VERSION = "1.8.9"
-    const val CLIENT_CLOUD = "https://api.flawcra.cc/fcmod"
+    const val CLIENT_CLOUD = "http://api.flawcra.cc/fcmod"
 
     var isStarting = false
 
