@@ -1,4 +1,4 @@
-# LiquidBounce
+# FCMod (DISCONTINUED BECAUSE I'M NOW WORKING ON MAIN LIQUIDBOUNCE)
 A free mixin-based injection hacked-client for Minecraft using Minecraft Forge.
 
 Website: https://flawcra.cc/fcmod \
